@@ -1,0 +1,265 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf5ff;
+  padding: 2rem;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 650px;
+}
+
+.pageSubtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  margin: 0 628px;
+}
+
+.form {
+  background: white;
+  border-radius: 12px;
+  max-width: 1200px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-left: 170px;
+  border: 1px solid #f3e8ff;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputLabel {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+}
+
+.inputField {
+  width: 90%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #e9d5ff;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #111827;
+  background-color: #faf5ff;
+  transition: all 0.2s;
+}
+
+.inputField1 {
+  width: 95%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #e9d5ff;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #111827;
+  background-color: #faf5ff;
+  transition: all 0.2s;
+}
+
+
+.inputField:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+  background-color: white;
+}
+
+.textareaField {
+  width: 90%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #e9d5ff;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #111827;
+  background-color: #faf5ff;
+  transition: all 0.2s;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.textareaField:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+  background-color: white;
+}
+
+.fileUploadContainer {
+  margin-bottom: 0.5rem;
+}
+
+.fileUploadLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fileUpload {
+  position: absolute;
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.fileUploadText {
+  flex: 1;
+  padding: 0.85rem 1rem;
+  border: 1px solid #e9d5ff;
+  border-radius: 10px 0 0 10px;
+  font-size: 0.95rem;
+  color: #111827;
+  background-color: #faf5ff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fileUploadButton {
+  padding: 0.85rem 1rem;
+  background: #8b5cf6;
+  color: white;
+  border-radius: 0 10px 10px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.fileUploadButton:hover {
+  background: #7c3aed;
+}
+
+.uploadButton {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 0.5rem;
+}
+
+.uploadButton:hover {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.meaningfulInfo {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid #8b5cf6;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.1);
+  margin: 1.5rem 0;
+}
+
+.meaningfulInfo h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #5b21b6;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.meaningfulInfo p {
+  white-space: pre-wrap;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  background: white;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+}
+
+.backButton:hover {
+  background-color: #f3f4f6;
+}
+
+.highlight {
+  animation: highlight 2s ease;
+  border-color: #8b5cf6 !important;
+}
+
+@keyframes highlight {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(139, 92, 246, 0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+  }
+}
